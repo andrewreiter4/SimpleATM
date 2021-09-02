@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SimpleATM 
+public class SimpleATM
 {   
 
 	private HashMap <String, Double > b = new HashMap <String, Double>();
@@ -24,7 +24,7 @@ public class SimpleATM
 		}
 	}
 	
-	public String withdrawMoney (String accountID, double withdrawAmount)
+	public String withdraw (String accountID, double withdrawAmount)
 	{
 		if (b.get(bankID) = null)
 		{
