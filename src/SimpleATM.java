@@ -1,6 +1,4 @@
 import java.util.*;
-import java.util.HashMap;
-
 
 public class SimpleATM 
 {   
@@ -25,7 +23,24 @@ public class SimpleATM
 			}
 		}
 	}
-
+	
+	public String withdrawMoney (String accountID, double withdrawAmount)
+	{
+		if (b.get(bankID) = null)
+		{
+			return("ID does not exist.");
+		}
+		else if (withdrawAmount > b.get(bankID))
+		{
+			return("Error: Amount invalid.");
+		}
+		else if 
+		{
+			b.replace(bankID, (b.get(bankID)-withdrawAmount));
+			return("Withdrawn.");
+		}
+	}
+	
 	
 }
 
