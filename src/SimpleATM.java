@@ -26,30 +26,30 @@ public class SimpleATM
 	
 	public String withdraw (String accountID, double withdrawAmount)
 	{
-		if (b.get(bankID) = null)
+		if (b.get(accountID) = null)
 		{
 			return("ID does not exist.");
 		}
-		else if (withdrawAmount > b.get(bankID))
+		else if (withdrawAmount > b.get(accountID))
 		{
 			return("Error: Amount invalid.");
 		}
 		else if 
 		{
-			b.replace(bankID, (b.get(bankID)-withdrawAmount));
+			b.replace(accountID, (b.get(accountID)-withdrawAmount));
 			return("Withdrawn.");
 		}
 	}
 
 	public String checkBalance(String accountID)
 	{
-		if (b.get(bankID) = null)
+		if (b.get(accountID) = null)
 		{
 			return("ID does not exist.");
 		}
 		else
 		{
-			return ""+b.get(bankID);
+			return ""+b.get(accountID);
 		}
 	}
 	
