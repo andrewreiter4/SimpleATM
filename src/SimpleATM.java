@@ -40,7 +40,18 @@ public class SimpleATM
 			return("Withdrawn.");
 		}
 	}
-	
+
+	public String checkBalance(String accountID)
+	{
+		if (b.get(bankID) = null)
+		{
+			return("ID does not exist.");
+		}
+		else
+		{
+			return ""+b.get(bankID);
+		}
+	}
 	
 }
 
