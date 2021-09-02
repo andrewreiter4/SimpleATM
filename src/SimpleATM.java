@@ -43,7 +43,7 @@ public class SimpleATM
 
 	public String checkBalance(String accountID)
 	{
-		if (b.get(accountID) = null)
+		if (b.get(accountID) == null)
 		{
 			return("ID does not exist.");
 		}
