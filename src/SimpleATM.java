@@ -1,11 +1,9 @@
 import java.util.*;
-import java.util.HashMap;
 
-
-public class SimpleATM 
+public class SimpleATM
 {   
 
-	private HashMap <String, Double > b = new HashMap <String, Double>();
+	public HashMap <String, Double > b = new HashMap <String, Double>();
 
 	public SimpleATM() {
 		
@@ -25,7 +23,35 @@ public class SimpleATM
 			}
 		}
 	}
+	
+	public String withdraw (String accountID, double withdrawAmount)
+	{
+		if (b.get(accountID) == null)
+		{
+			return("ID does not exist.");
+		}
+		else if (withdrawAmount > b.get(accountID))
+		{
+			return("Error: Amount invalid.");
+		}
+		else
+		{
+			b.replace(accountID, (b.get(accountID)-withdrawAmount));
+			return("Withdrawn.");
+		}
+	}
 
+	public String checkBalance(String accountID)
+	{
+		if (b.get(accountID) == null)
+		{
+			return("ID does not exist.");
+		}
+		else
+		{
+			return ""+b.get(accountID);
+		}
+	}
 	
 }
 
